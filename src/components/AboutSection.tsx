@@ -37,7 +37,7 @@ export const AboutSection: React.FC = () => {
                 <div className="absolute bottom-5 left-5 right-5 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-sky-100 shadow-md">
                   <div className="flex items-center gap-3">
                     <img
-                      src="/assets/aistudio/logo_rete__1__b970e963.png"
+                      src="./assets/aistudio/logo_rete__1__b970e963.png"
                       alt="RETE. ID"
                       className="w-12 h-12 rounded-full object-contain bg-sky-50 p-0.5 shrink-0 shadow-sm"
                     />

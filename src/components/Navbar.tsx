@@ -50,7 +50,7 @@ export const Navbar: React.FC = () => {
             >
               <div className="relative w-11 h-11 rounded-full p-[2px] bg-gradient-to-tr from-[#0284C7] to-[#38BDF8] shadow-sm group-hover:scale-105 transition-transform overflow-hidden">
                 <img
-                  src="/assets/aistudio/logo_rete__1__b970e963.png"
+                  src="./assets/aistudio/logo_rete__1__b970e963.png"
                   alt="Logo RETE. ID"
                   className="w-full h-full object-contain rounded-full bg-white p-0.5"
                 />
@@ -197,7 +197,7 @@ export const Navbar: React.FC = () => {
               <div className="flex items-center justify-between pb-4 border-b border-sky-100">
                 <div className="flex items-center gap-2.5">
                   <img
-                    src="/assets/aistudio/logo_rete__1__b970e963.png"
+                    src="./assets/aistudio/logo_rete__1__b970e963.png"
                     alt="Logo RETE. ID"
                     className="w-8 h-8 object-contain rounded-full bg-sky-50 p-0.5"
                   />

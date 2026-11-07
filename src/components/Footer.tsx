@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
           {/* Brand & Copyright */}
           <div className="flex items-center gap-3">
             <img
-              src="/assets/aistudio/logo_rete__1__b970e963.png"
+              src="./assets/aistudio/logo_rete__1__b970e963.png"
               alt="Logo RETE. ID"
               className="w-7 h-7 rounded-full object-contain bg-sky-50 p-0.5 shadow-sm"
             />

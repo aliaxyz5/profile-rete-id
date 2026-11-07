@@ -28,7 +28,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick }) => {
         {/* Top Tagline Badge with Logo Crest */}
         <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/95 border border-sky-200/90 shadow-sm backdrop-blur-md mb-6">
           <img
-            src="/assets/aistudio/logo_rete__1__b970e963.png"
+            src="./assets/aistudio/logo_rete__1__b970e963.png"
             alt="RETE. ID"
             className="w-5 h-5 rounded-full object-contain bg-sky-50 p-0.5"
           />
