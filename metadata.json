@@ -1,0 +1,6 @@
+{
+  "name": "Alkyy-In (RETE. ID) - Profil & Toko Art Alam Avian Ngawi",
+  "description": "Website Profil Perusahaan & Toko Alkyy-In (RETE. ID) di Ngawi. Menghadirkan produk pakan & perawatan burung kualitas premium, sangkar ukir jati, dan perlengkapan hobi alam bertema avian luxury dengan layanan 24 jam.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

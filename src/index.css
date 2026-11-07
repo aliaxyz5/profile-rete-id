@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-cyan: #0284C7;
+    --brand-sky: #38BDF8;
+    --sky-light: #E0F2FE;
+    --sky-bg: #F0F9FF;
+    --pure-white: #FFFFFF;
+    --slate-text: #0F172A;
+    --slate-muted: #64748B;
+    --nature-green: #10B981;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+}
+
+/* Simple, calm idle animations (tidak ramai, lembut) */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(2deg);
+  }
+}
+
+@keyframes gentlePulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.96);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.04);
+  }
+}
+
+.animate-float-calm {
+  animation: floatSlow 8s ease-in-out infinite;
+}
+
+.animate-gentle-pulse {
+  animation: gentlePulse 4.5s ease-in-out infinite;
+}
+
+@keyframes cloudDriftSlow {
+  0% {
+    transform: translateX(-5%);
+  }
+  50% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(-5%);
+  }
+}
+
+@keyframes cloudDriftReverse {
+  0% {
+    transform: translateX(4%);
+  }
+  50% {
+    transform: translateX(-4%);
+  }
+  100% {
+    transform: translateX(4%);
+  }
+}
+
+@keyframes treeSwayLeft {
+  0%, 100% {
+    transform: rotate(14deg) translateY(0);
+  }
+  50% {
+    transform: rotate(16.5deg) translateY(-4px);
+  }
+}
+
+@keyframes treeSwayRight {
+  0%, 100% {
+    transform: rotate(-13deg) translateY(0);
+  }
+  50% {
+    transform: rotate(-15.5deg) translateY(-4px);
+  }
+}
+
+@keyframes origamiUnfold {
+  0% {
+    transform: scale(0.2) rotate(-35deg) translateY(3px) skewX(-10deg);
+    opacity: 0;
+    filter: drop-shadow(0 0 0 rgba(2, 132, 199, 0));
+  }
+  50% {
+    transform: scale(1.18) rotate(6deg) translateY(-2px) skewX(4deg);
+    opacity: 0.95;
+  }
+  80% {
+    transform: scale(0.96) rotate(-2deg) translateY(0px) skewX(-1deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0deg) translateY(0) skewX(0deg);
+    opacity: 1;
+    filter: drop-shadow(0 2px 4px rgba(2, 132, 199, 0.3));
+  }
+}
+
+.animate-cloud-drift {
+  animation: cloudDriftSlow 24s ease-in-out infinite;
+}
+
+.animate-cloud-drift-rev {
+  animation: cloudDriftReverse 28s ease-in-out infinite;
+}
+
+.animate-tree-left {
+  animation: treeSwayLeft 9s ease-in-out infinite;
+}
+
+.animate-tree-right {
+  animation: treeSwayRight 10s ease-in-out infinite;
+}
+
+.animate-origami-crane {
+  animation: origamiUnfold 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Fresh Light Glassmorphism & Translucent Accents */
+.glass-nav-fresh {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(224, 242, 254, 0.9);
+  box-shadow: 0 4px 20px -2px rgba(2, 132, 199, 0.06);
+}
+
+.glass-card-fresh {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(224, 242, 254, 0.8);
+}
+
+.fresh-gradient-text {
+  background: linear-gradient(135deg, #0284C7 0%, #0EA5E9 45%, #10B981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
